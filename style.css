@@ -1,0 +1,22 @@
+body { 
+    background: rgb(5,37,67);
+    background: radial-gradient(circle, rgba(5,37,67,1) 39%, rgba(7,65,90,1) 80%, rgba(9,102,121,1) 100%);
+    color: #ffffff;
+}
+.info {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+p {
+    font-size: 30px;
+}
+input  {
+    width: -10%;
+}
+img {
+    position: relative;
+    margin-left: 750px;
+    margin-right: auto;
+    width: 18%;
+}
