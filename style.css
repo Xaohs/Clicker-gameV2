@@ -13,7 +13,8 @@ p {
     font-size: 35px;
 }
 input  {
-    width: 4%;
+    width: 200%;
+    cursor: default;
 }
 .info img {
     position: absolute;
@@ -21,4 +22,17 @@ input  {
     margin-top: 100px;
     margin-right: 150px;
     width: 20%;
+}
+.apItems {
+    position: absolute;
+    margin-left: 300px;
+    display: grid;
+    grid-template-columns: auto 300px;
+    grid-gap: 5px;
+    background-color: #061e36;
+}
+.apItems label {
+    font-size: 25px;
+    margin: auto;
+    text-align: right;
 }
