@@ -7,6 +7,7 @@ var seconds1 = 0;
 var cancel = setInterval(calcTotal, 1000);
 var cancel1 = setInterval(printAmount, 50);
 var idle = 0;
+var totalCost = 0;
 
 function teemoClick() {
     clicking++;
@@ -15,21 +16,40 @@ function teemoClick() {
     return clicking;
 }
 function howMuchNow() {
-    totalCoins = clicking + idle;
+    totalCoins = (clicking + idle);
     document.getElementById("rich").innerHTML = "Gold: " + totalCoins.toFixed(2);
 }
-function ad() { 
-    adBought++ 
-    return adBought;
+function ad() {
+    totalCost = 0; 
+    totalCost = (10 * 1.15**adBought);
+    if (totalCoins >= totalCost) {
+        adBought++
+        clicking = clicking - totalCost; 
+        howMuchNow()
+        return adBought, totalCost;
+    } else {
+        alert("not enough coins");
+        totalCost = 0;
+    }
+
 }
 function ap() { 
-    apBought++ 
-    return apBought;
+    totalCost = 0; 
+    totalCost = (100 * 1.15**apBought);
+    if (totalCoins >= totalCost) {
+        apBought++
+        clicking = clicking - totalCost; 
+        howMuchNow()
+        return apBought, totalCost;
+    } else {
+        alert("not enough coins");
+        totalCost = 0;
+    }
 }
 function calcTotal() {
     seconds += 1;
     idle = idle + (apBought / 10); 
-    totalCoins = clicking + idle;
+    totalCoins = (clicking + idle);
     return totalCoins;
 }
 function printAmount() {

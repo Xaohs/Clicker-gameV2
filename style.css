@@ -1,22 +1,24 @@
 body { 
-    background: rgb(5,37,67);
-    background: radial-gradient(circle, rgba(5,37,67,1) 39%, rgba(7,65,90,1) 80%, rgba(9,102,121,1) 100%);
+    background: rgb(10,60,102);
+    background: linear-gradient(90deg, rgba(10,60,102,1) 0%, rgba(10,115,170,1) 33%, rgba(6,16,55,1) 56%, rgba(6,16,55,1) 100%);
     color: #ffffff;
 }
-.info {
+.info{
     display: flex;
-    justify-content: center;
-    gap: 50px;
+    justify-content: right;
+    gap: 50px 50px;
+    margin-right: 300px;
 }
 p {
-    font-size: 30px;
+    font-size: 35px;
 }
 input  {
-    width: -10%;
+    width: 4%;
 }
-img {
-    position: relative;
-    margin-left: 750px;
-    margin-right: auto;
-    width: 18%;
+.info img {
+    position: absolute;
+    margin: auto;
+    margin-top: 100px;
+    margin-right: 150px;
+    width: 20%;
 }
