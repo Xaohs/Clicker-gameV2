@@ -28,14 +28,22 @@
                     <label for="bf_Sword">BF Sword</label> -->
                 </div>
                 <div class="apItems">
-                    <input id="dorans_Ring" onclick=ap(this.id) type="image" src="images/dorans_Ring.jpg"></input>
-                    <label for="dorans_Ring">Doran's Ring<br> 10 Gold</label>
-                    <input id="amp_Tome" onclick=ap(this.id) type="image" src="images/amp_Tome.jpg"></input>
-                    <label for="amp_Tome">Amplifying Tome</label>
-                    <input id="blasting_Wand"onclick=() type="image" src="images/blasting_Wand.jpg"></input>
-                    <label for="blasting_Wand">Blasting Wand</label>
-                    <input id="needlesly_Large_Rod" onclick=() type="image" src="images/large_Rod.jpg"></input>
-                    <label for="needlesly_Large_Rod">Needlesly Large Rod</label>
+                    <div id="dorans_Ring" onclick=ap(this.id)>
+                        <input type="image" src="images/dorans_Ring.jpg"></input>
+                        <label id="dorans_Ring_Gold" for="dorans_Ring"></label>
+                    </div>
+                    <div id="amp_Tome" onclick=ap(this.id)>
+                        <input type="image" src="images/amp_Tome.jpg"></input>
+                        <label id="amp_Tome_Gold" for="amp_Tome"></label>
+                    </div>
+                    <div id="blasting_Wand" onclick=ap(this.id)>
+                        <input type="image" src="images/blasting_Wand.jpg"></input>
+                        <label id="blasting_Wand_Gold" for="blasting_Wand"></label>
+                    </div>
+                    <div id="item4">
+                        <input id="needlesly_Large_Rod" onclick=() type="image" src="images/large_Rod.jpg"></input>
+                        <label id="large_Rod_Gold" for="needlesly_Large_Rod"></label>
+                    </div>
                 </div>
             </div>
 </body>
